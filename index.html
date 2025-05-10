@@ -1,0 +1,543 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carlo Untalan Web Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Bootstrap cdn -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+  <!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<!-- AOS JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+</head>
+  <body>
+
+<!-- HEADER -->
+  <header class="container fixed-top col-lg-10">
+    <div>
+      <a href="#home" class="logo">C.U.</a>
+      <button class="burger-menu" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links">
+        <li><a href="#background">Background</a></li>
+        <li><a href="#Skill">Skills</a></li>
+        <li><a href="#prj">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+      </ul>
+    </div>
+  </header>
+    
+  <div data-aos="fade-down">
+        
+<!-- INTROUCTION -->
+      <div class="container" id="home">
+        <h1 class="mt-5 mb-0">Hello!</h1>
+        <blockquote class="blockquote">
+          <p class="mb-0">I'm <strong>Carlo Untalan</strong></p>
+          <footer class="blockquote-footer">a software developer with a passion for creating user-friendly and visually appealing websites.</cite></footer>
+        </blockquote>
+      </div>
+  
+
+<!-- DL MY RESUME -->
+    <div class="container mt-4" >
+      <a href="resume/Untalan, Carlo - CV.pdf" class="button" download>
+        <span class="button__icon-wrapper">
+          <svg
+            viewBox="0 0 14 15"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            class="button__icon-svg"
+            width="10"
+          >
+            <path
+              d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+              fill="currentColor"
+            ></path>
+          </svg>
+      
+          <svg
+            viewBox="0 0 14 15"
+            fill="none"
+            width="10"
+            xmlns="http://www.w3.org/2000/svg"
+            class="button__icon-svg button__icon-svg--copy"
+          >
+            <path
+              d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </span>
+        Download my resume
+      </a>
+    </div>
+
+<!-- SOCIAL LINKS -->
+    <nav class="container mt-5">
+      <button class="cssbuttons-io">
+        <a href="https://github.com/carlo121603" target="_blank"><span
+          ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><path fill="#ffffff" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+          Github</span
+        ></a>
+        
+
+        <button class="cssbuttons-io">
+          <a href="https://www.linkedin.com/in/carlo-untalan-45076325a/" target="_blank"><span
+            ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="#ffffff" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+            LinkedIn</span
+          ></a>
+      </nav>
+
+<!-- BACKGROUND -->
+      <div class="container background">
+        <p id="background">Background</p>
+
+        <div class="row justify-content-start col-lg-8">
+          <p class="text-muted">
+            4th-year graduating student of <strong>Bachelor of Science in Information Technology (BSIT)</strong> at STI College Santa Rosa. I am seeking a career opportunity in web or software development, where I can apply my skills, continue learning, and contribute to building effective and innovative digital solutions.
+          </p>
+          <p class="text-muted mt-3">When I am not immersed in studying programming, I enjoy playing online multiplayer games such as League of Legends and Valorant, as well as watching tutorials on new technologies I am currently exploring</p>
+      </div>
+
+  </div>
+
+
+
+       <!-- SKILLS -->
+       <div class="mt-5 container">
+        <article class="row justify-content-start" id="Skill"  data-aos="slide-right">
+          <div class="col-lg-4 col-sm-12 text-lg-start">
+            <p id="skills" class="section-heading">Skills</p>
+            <div class="skills-section">
+              <div class="skills-category" data-aos="slide-right">
+                <p class="skills-title">Programming Languages</p>
+                <ul class="skills-list">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                  <li>PHP</li>
+                  <li>SQL</li>
+                </ul>
+              </div>
+              <div class="skills-category" data-aos="slide-right">
+                <p class="skills-title">Tools</p>
+                <ul class="skills-list">
+                  <li>VS Code</li>
+                  <li>Visual Studio 2022</li>
+                  <!-- <li>Figma</li> -->
+                  <li>NetBeans</li>
+                  <li>GitHub</li>
+                </ul>
+              </div>
+              <div class="skills-category"  data-aos="slide-right">
+                <p class="skills-title">Frameworks</p>
+                <ul class="skills-list">
+                  <li>Bootstrap</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+ <!-- SKILLS --> 
+
+
+    
+      <div data-aos="slide-right" id="prj">
+        <div class="container">
+          <div class="project-container mt-5">
+            <h2 id="projects">Projects</h2>
+            
+            <div class="row">
+              <div class="col-md-12">
+                <div class="project-card">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="project-content">
+                        <h3 class="project-title">G&B Finance Inc.</h3>
+                        <p class="project-description">
+                          Collaborated with <strong class="collab"><a href="https://www.facebook.com/nclnncvs" target="_blank">Nicole Ann Cuevas</a></strong> 
+                          to create an online platform for a money lending company.
+                        </p>
+                        <div class="project-tech">
+                          <span class="tech-tag">WordPress</span>
+                          <span class="tech-tag">PHP</span>
+                          <span class="tech-tag">CSS</span>
+                          <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                          <a href="not-reachable.html" class="btn btn-project"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="project-video-container">
+                        <video class="img-fluid rounded shadow project-img" controls muted loop>
+                          <source src="images/0508.mp4" type="video/mp4">
+                          Your browser does not support the video tag.
+                        </video>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row mt-5">
+              <div class="col-md-12">
+                <div class="project-card">
+                  <div class="row">
+                    <div class="col-md-6 order-md-2">
+                      <div class="project-content">
+                        <h3 class="project-title">Rising Sun</h3>
+                        <p class="project-description">
+                          Built dynamic front-end features and data manipulation in the backend for <strong class="collab"><a href="https://www.anytime.asia/Rising%20Sun" target="_blank">Rising Sun</a></strong>, 
+                          an e-commerce platform.
+                        </p>
+                        <div class="project-tech">
+                          <span class="tech-tag">PHP</span>
+                          <span class="tech-tag">CSS</span>
+                          <span class="tech-tag">Bootstrap</span>
+                          <span class="tech-tag">JavaScript</span>
+                          <span class="tech-tag">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                          <a href="https://www.anytime.asia/Rising%20Sun/product.php" target="_blank" class="btn btn-project"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                      <div class="project-image-container">
+                        <img src="images/3.png" alt="Rising Sun" class="img-fluid rounded shadow project-img">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="row mt-5">
+              <div class="col-md-12">
+                <div class="project-card">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="project-content">
+                        <h3 class="project-title">EBI Philippines Incorporated</h3>
+                        <p class="project-description">
+                          Built admin portal to dynamically add features for 
+                          <strong class="collab"><a href="https://neuralcoredev.com/EBI/careers.php" target="_blank">career</a></strong> and 
+                          <strong class="collab"><a href="https://neuralcoredev.com/EBI/act.php" target="_blank">bulletin</a></strong> 
+                          sub-navigation of <strong class="collab"><a href="https://neuralcoredev.com/EBI" target="_blank">EBI</a></strong>.
+                        </p>
+                        <div class="project-tech">
+                          <span class="tech-tag">PHP</span>
+                          <span class="tech-tag">CSS</span>
+                          <span class="tech-tag">Bootstrap</span>
+                          <span class="tech-tag">JavaScript</span>
+                          <span class="tech-tag">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                          <a href="https://neuralcoredev.com/EBI/careers.php" target="_blank" class="btn btn-project"><i class="fas fa-external-link-alt"></i> View Careers</a>
+                          <a href="https://neuralcoredev.com/EBI/act.php" target="_blank" class="btn btn-project"><i class="fas fa-external-link-alt"></i> View Bulletin</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="project-image-container">
+                        <div class="image-stack">
+                          <!-- <img src="images/adminEBI.png" alt="EBI admin" class="img-fluid rounded shadow project-img"> -->
+                          <img src="images/4.png" alt="EBI Careers" class="img-fluid rounded shadow project-img">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>   
+
+            <div class="row mt-5">
+              <div class="col-md-12">
+                <div class="project-card">
+                  <div class="row">
+                    <div class="col-md-6 order-md-2">
+                      <div class="project-content">
+                        <h3 class="project-title">Expense Tracker</h3>
+                        <p class="project-description">
+                            A simple expense tracker developed to help my father automate the recording and tracking of monthly bills. Built with a user-friendly interface and basic CRUD functionalities to manage expenses efficiently.
+                        </p>
+                        <div class="project-tech">
+                          <span class="tech-tag">PHP</span>
+                          <span class="tech-tag">CSS</span>
+                          <span class="tech-tag">JavaScript</span>
+                          <span class="tech-tag">MySQL</span>
+                        </div>
+                        <div class="project-links">
+                          <a href="http://expense-tracker01.free.nf/" target="_blank" class="btn btn-project"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div>
+                      </div>
+                    </div>
+                     <div class="col-md-6">
+                      <div class="project-image-container">
+                        <div class="image-stack">
+                          <img src="images/6.png" alt="ExpenseTracker" class="img-fluid rounded shadow project-img">
+                          <img src="images/expenseGraph.png" alt="EBI admin" class="img-fluid rounded shadow project-img">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-5">
+              <div class="col-md-12">
+                <div class="project-card">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="project-content">
+                        <h3 class="project-title">Simple Personal Project: Coffee</h3>
+                        <p class="project-description">
+                          Built a landing page for a fictional coffee shop to practice front-end design.
+                        </p>
+                        <div class="project-tech">
+                          <span class="tech-tag">HTML</span>
+                          <span class="tech-tag">CSS</span>
+                          <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                          <a href="https://carlo121603.github.io/CoffeeSite/" target="_blank" class="btn btn-project"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="project-image-container">
+                        <img src="images/5.png" alt="EBI" class="img-fluid rounded shadow project-img">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-5">
+              <div class="col-md-12">
+                <div class="project-card">
+                  <div class="row">
+                    <div class="col-md-6 order-md-2">
+                      <div class="project-content">
+                        <h3 class="project-title">Human Resources Information System</h3>
+                        <p class="project-description">
+                          Developing a comprehensive HRIS solution for Neuralcore Company that streamlines 
+                          employee management, attendance tracking, and performance evaluation.
+                        </p>
+                        <div class="project-status">
+                          <span class="status-badge">In Progress</span>
+                        </div>
+                        <div class="project-tech">
+                          <span class="tech-tag">PHP</span>
+                          <span class="tech-tag">CSS</span>
+                          <span class="tech-tag">Bootstrap</span>
+                          <span class="tech-tag">JavaScript</span>
+                          <span class="tech-tag">MySQL</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 order-md-1">
+                      <div class="project-image-container">
+                        <img src="images/2.png" alt="HRIS" class="img-fluid rounded shadow project-img">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+             <div class="row mt-5">
+              <div class="col-md-12">
+                <div class="project-card">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="project-content">
+                        <h3 class="project-title">Admin Inquiry Viewer Integration for StandPro</h3>
+                        <p class="project-description">
+                          Structured a backend database to store product specifications and reference standards for use in the front-end inquiry form. Integrated this data with the existing system to ensure complete inquiry details such as client info, quotation references, and test specifications are retrieved and displayed accurately in the admin panel.
+                        </p>
+                        <div class="project-tech">
+                          <span class="tech-tag">PHP</span>
+                          <span class="tech-tag">CSS</span>
+                          <span class="tech-tag">MySQL</span>
+                          <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <!-- <div class="project-links">
+                          <a href="https://carlo121603.github.io/CoffeeSite/" target="_blank" class="btn btn-project"><i class="fas fa-external-link-alt"></i> View Project</a>
+                        </div> -->
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="project-image-container">
+                        <div class="image-stack">
+                          <img src="images/9.png" alt="ExpenseTracker" class="img-fluid rounded shadow project-img">
+                          <img src="images/7.png" alt="EBI admin" class="img-fluid rounded shadow project-img">
+                          <img src="images/8.png" alt="EBI admin" class="img-fluid rounded shadow project-img">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- CERTIFICATIONS -->
+      <div class="container mb-5" id="certifications">
+        <h2 class="section-heading mb-4">Certifications</h2>
+        <div class="row">
+
+          <!-- Certification Card 3 -->
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="certification-card">
+              <div class="certification-img-container">
+                <img src="images/java certificate.png" alt="PHP Certificate" class="certification-img">
+              </div>
+              <div class="certification-body">
+                <h3 class="certification-title">Java Foundations</h3>
+                <p class="certification-issuer">Issued by: STI College</p>
+                <p class="certification-date">June 2022</p>
+                <a href="#" class="btn btn-certification" target="_blank">View Credential</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification Card 3 -->
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="certification-card">
+              <div class="certification-img-container">
+                <img src="images/sysad certificate.png" alt="PHP Certificate" class="certification-img">
+              </div>
+              <div class="certification-body">
+                <h3 class="certification-title">System Administration</h3>
+                <p class="certification-issuer">Issued by: STI College</p>
+                <p class="certification-date">June 2022</p>
+                <a href="#" class="btn btn-certification" target="_blank">View Credential</a>
+              </div>
+            </div>
+          </div>
+
+            <!-- Certification Card 1 -->
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="certification-card">
+              <div class="certification-img-container">
+                <img src="images/css certificate.png" alt="CSS Certificate" class="certification-img">
+              </div>
+              <div class="certification-body">
+                <h3 class="certification-title">Introduction to CSS</h3>
+                <p class="certification-issuer">Issued by: Simplilearn</p>
+                <p class="certification-date">February 2025</p>
+                <a href="#" class="btn btn-certification" target="_blank">View Credential</a>
+              </div>
+            </div>
+          </div>
+          
+            <!-- Certification Card 4 -->
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="certification-card">
+              <div class="certification-img-container">
+                <img src="images/php certificate.jpg" alt="PHP Certificate" class="certification-img">
+              </div>
+              <div class="certification-body">
+                <h3 class="certification-title">Introduction to PHP</h3>
+                <p class="certification-issuer">Issued by: Simplilearn</p>
+                <p class="certification-date">February 2025</p>
+                <a href="#" class="btn btn-certification" target="_blank">View Credential</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification Card 2 -->
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="certification-card">
+              <div class="certification-img-container">
+                <img src="images/html certificate.jpg" alt="HTML Certificate" class="certification-img">
+              </div>
+              <div class="certification-body">
+                <h3 class="certification-title">Introduction to HTML</h3>
+                <p class="certification-issuer">Issued by: Simplilearn</p>
+                <p class="certification-date">March 2025</p>
+                <a href="#" class="btn btn-certification" target="_blank">View Credential</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Certification Card 3 -->
+          <div class="col-md-6 col-lg-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="certification-card">
+              <div class="certification-img-container">
+                <img src="images/webdev certificate.png" alt="PHP Certificate" class="certification-img">
+              </div>
+              <div class="certification-body">
+                <h3 class="certification-title">Web Development for Beginners</h3>
+                <p class="certification-issuer">Issued by: Simplilearn</p>
+                <p class="certification-date">March 2025</p>
+                <a href="#" class="btn btn-certification" target="_blank">View Credential</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+              
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <h5 class="footer-heading">About Me</h5>
+              <p class="footer-text">
+                I'm Carlo Untalan, software developer passionate about creating user-friendly and visually appealing websites. Let's connect!
+              </p>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <h5 class="footer-heading">Quick Links</h5>
+              <ul class="footer-links">
+                <li><a href="#background">Background</a></li>
+                <li><a href="#Skill">Skills</a></li>
+                <li><a href="#prj">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <h5 class="footer-heading">Contact</h5>
+              <ul class="footer-contact">
+                <li><a href="mailto:untalancarlo1216@gmail.com">untalancarlo1216@gmail.com</a></li>
+                <li><a href="https://github.com/carlo121603" target="_blank">GitHub</a></li>
+                <li><a href="https://www.linkedin.com/in/carlountalan12/" target="_blank">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="footer-spacer"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

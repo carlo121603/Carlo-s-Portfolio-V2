@@ -1,0 +1,71 @@
+<!-- CERTIFICATES SECTION -->
+      <div class="container mt-5" id="certificates">
+        <h2 class="section-heading mb-4">Certificates</h2>
+        <div class="row">
+          <!-- Certificate 1 -->
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+            <div class="certificate-card card h-100">
+              <img src="images/html certificate.jpg" class="card-img-top" alt="Certificate 1">
+              <div class="card-body">
+                <h5 class="card-title">Introduction to HTML</h5>
+                <p class="card-text text-muted">Simplilearn</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Certificate 2 -->
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="certificate-card card h-100">
+              <img src="images/css certificate.png" class="card-img-top" alt="Certificate 2">
+              <div class="card-body">
+                <h5 class="card-title">Introduction to CSS</h5>
+                <p class="card-text text-muted">Simplilearn</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Certificate 3 -->
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="certificate-card card h-100">
+              <img src="images/webdev certificate.png" class="card-img-top" alt="Certificate 3">
+              <div class="card-body">
+                <h5 class="card-title">Web Development for Beginners</h5>
+                <p class="card-text text-muted">Simplilearn</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Certificate 4 -->
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+            <div class="certificate-card card h-100">
+              <img src="images/php certificate.jpg" class="card-img-top" alt="Certificate 4">
+              <div class="card-body">
+                <h5 class="card-title">Introduction to PHP</h5>
+                <p class="card-text text-muted">Simplilearn</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Certificate 5 -->
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="certificate-card card h-100">
+              <img src="images/java certificate.png" class="card-img-top" alt="Certificate 5">
+              <div class="card-body">
+                <h5 class="card-title">Java Foundations (Award of Course Completion)</h5>
+                <p class="card-text text-muted">Oracle Academy</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Certificate 6 -->
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="certificate-card card h-100">
+              <img src="images/sysad certificate.png" class="card-img-top" alt="Certificate 6">
+              <div class="card-body">
+                <h5 class="card-title">System Administration (Award of Course Completion)</h5>
+                <p class="card-text text-muted">Linux Professional Institute</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>

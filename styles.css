@@ -1,0 +1,673 @@
+body{
+  padding: 80px 100px;
+  font-family: 'EB Garamond';
+  background-color: #d7d7d7 !important;
+  width: 100%;
+  height: 100vh;
+  --color: #e1e1e1;
+  background-color: #f3f3f3;
+  background-image: linear-gradient(0deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent),
+  linear-gradient(90deg, transparent 24%, var(--color) 25%, var(--color) 26%, transparent 27%, transparent 74%, var(--color) 75%, var(--color) 76%, transparent 77%, transparent);
+  background-size: 55px 55px;
+  
+  --clr: #7808d0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#home{
+  padding-top: 30px;
+}
+
+/* HEADER */
+header {
+  background-color: #333;
+  border-radius: 0; /* Remove border-radius for a clean, modern look */
+  color: #fff;
+  padding: 10px 20px;
+  position: fixed; /* Fixed position to keep the header at the top */
+  top: 10px !important;
+  left: 0;
+  width: 100%; /* Full width to cover the viewport */
+  z-index: 1000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border-radius: 18px;
+  margin-bottom: 100px;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+a.logo:hover {
+  text-decoration: none;
+  color: var(--clr);
+}
+header .nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+header .nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+}
+
+header .nav-links li a:hover {
+  background-color: var(--clr);
+  border-radius: 24px;
+}
+
+header .burger-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+header .burger-menu span {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+h1.mt-5.mb-0{
+  margin-top: 80px !important;
+  font-weight: 800;
+}
+h1.mt-5.mb-0{
+  font-size: 4rem;
+}
+p.mb-0{
+  font-size: 2.5rem;
+}
+p.mb-0  strong {
+  color: var(--clr); /* Use the same variable for consistency */
+  font-weight: 600; /* Optional: Adjust font weight to match the design */
+}
+footer.blockquote-footer {
+  font-weight: 500;
+}
+/* HEADER */
+
+
+
+
+
+
+
+/* SOCIALS */
+
+/* DL MY RESUME */
+.button {
+  line-height: 1;
+  text-decoration: none;
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+  align-items: center;
+  gap: 0.75rem;
+  background-color: var(--clr);
+  color: #fff;
+  border-radius: 10rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  padding-left: 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color 0.3s;
+}
+
+.button__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: var(--clr);
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.button:hover {
+  background-color: #000;
+  text-decoration: none;
+  color: #fff;
+}
+.button:hover .button__icon-wrapper {
+  color: #000;
+}
+.button__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+.button:hover .button__icon-svg:first-child {
+  transition: transform 0.3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+.button:hover .button__icon-svg--copy {
+  transition: transform 0.3s ease-in-out 0.1s;
+  transform: translate(0);
+}
+
+
+
+
+
+/* SOCIALS */
+.cssbuttons-io {
+  position: relative;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  border-radius: 0.8em;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: ghostwhite;
+  overflow: hidden;
+  margin-right: 5px;
+  font-weight: 600;
+}
+
+.cssbuttons-io svg {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+}
+
+.cssbuttons-io span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.cssbuttons-io::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-io:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
+  transform: scale(0.95);
+}
+
+nav button a{
+  color: inherit;
+}
+
+nav button a:hover{
+  color: inherit;
+}
+/* SOCIALS */
+
+
+
+
+/* BACKGROUND */
+
+p#background {
+  font-size: 2rem !important;
+  font-weight: 600 !important;
+}
+
+.container.background{
+  margin-top: 5rem;
+}
+
+.container.background p.text-muted strong{
+  color: var(--clr);
+}
+
+
+
+/* BACKGROUND */
+
+
+
+/* SKILLS */
+.skills-section {
+  margin-top: 3rem;
+}
+
+.skills-category {
+  margin-bottom: 2rem;
+}
+
+.skills-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--clr); /* Matches your primary color */
+  margin-bottom: 1rem;
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.skills-list li {
+  color: #333;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin: 5px 0;
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgba(0, 0, 0, 0.05); /* Slightly transparent background for subtle contrast */
+}
+
+.skills-list li:hover {
+  background-color: var(--clr); /* Accent color on hover */
+  color: #fff; /* Change text color to white when hovered */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a shadow on hover for emphasis */
+}
+
+/* Section Heading */
+#skills.section-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0;
+}
+/* SKILLS */
+
+
+/* PROJECTS */
+#projects {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2rem;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+/* #projects:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  background-color: var(--clr);
+} */
+
+.project-container {
+  padding-bottom: 5%;
+}
+
+.project-card {
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.project-title {
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.project-description {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.project-tech {
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-tag {
+  padding: 5px 12px;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #555;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.tech-tag:hover {
+  background-color: var(--clr);
+  color: white;
+}
+
+.project-links {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-project {
+  padding: 8px 16px;
+  background-color: transparent;
+  color: var(--clr);
+  border: 1px solid var(--clr);
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.btn-project:hover {
+  background-color: var(--clr);
+  color: white;
+  text-decoration: none;
+}
+
+.project-image-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* New CSS for vertical image stack */
+.image-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+
+.project-img {
+  transition: transform 0.5s ease;
+  max-height: 230px; /* Increased height for bigger images */
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.03);
+}
+
+strong.collab a {
+  color: var(--clr);
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+strong.collab a:hover {
+  color: var(--clr);
+  text-decoration: underline;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 5px 12px;
+  background-color: rgba(var(--clr-rgb), 0.1);
+  color: var(--clr);
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+
+
+
+
+/* PROJECTS */
+
+
+
+/* Certificates */
+/* CERTIFICATIONS */
+
+#certifications {
+  padding-top: 50px;
+}
+
+.certification-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.certification-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.certification-img-container {
+  height: 180px;
+  overflow: hidden;
+}
+
+.certification-img {
+  padding: 10px 0 0 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /* transition: transform 0.5s ease; */
+}
+/* 
+.certification-card:hover .certification-img {
+  transform: scale(1.05);
+} */
+
+.certification-body {
+  padding: 20px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.certification-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.certification-issuer, .certification-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.btn-certification {
+  margin-top: auto;
+  align-self: flex-start;
+  padding: 8px 16px;
+  background-color: transparent;
+  color: var(--clr);
+  border: 1px solid var(--clr);
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.btn-certification:hover {
+  background-color: var(--clr);
+  color: white;
+  text-decoration: none;
+}
+/* Certificate  */
+
+
+/* FOOTER */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px;
+  margin-bottom: 40px; /* Add space below the footer */
+  border-radius: 18px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-heading {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-text {
+  font-size: 0.9rem;
+  color: #d7d7d7;
+  line-height: 1.6;
+}
+
+.footer-links,
+.footer-contact {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li,
+.footer-contact li {
+  margin-bottom: 10px;
+}
+
+.footer-links a,
+.footer-contact a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+  color: #fff;
+}
+
+
+.footer-spacer {
+  height: 1px; /* Adjust the space as needed */
+  background-color: transparent;
+}
+/* FOOTER */
+
+
+
+
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) { /* For tablets and smaller screens */
+  body {
+    padding: 60px 20px; /* Reduce padding for smaller screens */
+  }
+  h1.mt-5.mb-0 {
+    font-size: 3rem; /* Smaller font size for headers */
+  }
+  p.mb-0 {
+    font-size: 1.5rem; /* Adjust paragraph size */
+  }
+  footer.blockquote-footer {
+    font-size: 1.2rem; /* Smaller footer font size */
+  }
+
+  header .burger-menu {
+    display: flex; /* Show burger menu */
+  }
+
+  header .nav-links {
+    position: absolute;
+    top: 60px; /* Adjust based on header height */
+    right: 20px;
+    flex-direction: column;
+    background-color: #333;
+    border-radius: 5px;
+    display: none; /* Hide initially */
+    padding: 10px;
+  }
+
+  header .nav-links.active {
+    display: flex; /* Show menu when active */
+  }
+}
+
+@media (max-width: 480px) { /* For mobile devices */
+  body {
+    padding: 40px 10px; /* Further reduce padding */
+  }
+  h1.mt-5.mb-0 {
+    font-size: 2.5rem; /* Adjust header size for mobile */
+  }
+  p.mb-0 {
+    font-size: 1.2rem; /* Adjust paragraph size */
+  }
+  footer.blockquote-footer {
+    font-size: 1rem; /* Smaller footer font size for mobile */
+  }
+}
+
+
+
+
